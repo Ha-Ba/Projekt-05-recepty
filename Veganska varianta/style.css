@@ -123,11 +123,6 @@ body {
     
 }
 
-.menu-kategorie,
-.komentare {
-    flex: 1 1 50%;
- }
-
 .maly-recept,
 .hlavni-recept {
     flex: 1 1 100%;
@@ -178,20 +173,9 @@ body {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
+        justify-content: space-between;
     }
 
-    .kontejner-small {
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: calc(100% / 2);
-    }
-    
-    .box-hlavni {
-        min-height: 400px;
-        padding: 20px;
-        flex-basis: calc(100% / 2);
-    }
-    
     .box-svacina,
     .box-mexiko,
     .box-lusteniny,
