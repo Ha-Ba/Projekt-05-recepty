@@ -38,3 +38,175 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+
+body {
+    color: white;
+}
+
+.hlavni-recept {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.maly-recept {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.menu-kategorie {
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*----------------------------------*/
+
+.box-svacina {
+    background-image: url("images/chlebicek.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.box-mexiko {
+    background-image: url("images/tacos.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box-lusteniny {
+    background-image: url("images/cizrna.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.box-burger {
+    background-image: url("images/burger.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/*----------------------------------------------*/
+.sortiment {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+.box-hlavni {
+    background-image: url("images/salat.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.box-svacina,
+.box-mexiko,
+.box-lusteniny,
+.box-burger {
+    min-height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.menu-kategorie,
+.komentare {
+    flex: 1 1 50%;
+ }
+
+.maly-recept,
+.hlavni-recept {
+    flex: 1 1 100%;
+}
+.komentare {
+    text-align: right;
+}
+
+/*-------------------TABLET--------------------------*/
+
+@media (min-width: 480px) {
+.kontejner-small {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-hlavni {
+    min-height: 250px;
+    padding: 20px;
+}
+
+.box-svacina,
+.box-mexiko,
+.box-lusteniny,
+.box-burger {
+    flex-basis: calc(100% / 2);
+    min-height: 150px;
+    padding: 20px;
+}
+
+.menu-kategorie {
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hlavni-recept {
+    font-size: 36px;
+}
+
+.maly-recept {
+    font-size: 22px;
+}
+}
+
+/*-----------------DESKTOP------------------------*/
+
+@media (min-width: 860px) {
+    .sortiment {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .kontejner-small {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 2);
+    }
+    
+    .box-hlavni {
+        min-height: 400px;
+        padding: 20px;
+        flex-basis: calc(100% / 2);
+    }
+    
+    .box-svacina,
+    .box-mexiko,
+    .box-lusteniny,
+    .box-burger {
+        flex-basis: calc(100% / 2);
+        min-height: 200px;
+        padding: 20px;
+    }
+      
+.hlavni-recept {
+    font-size: 48px;
+}
+
+.maly-recept {
+    font-size: 28px;
+}
+}
